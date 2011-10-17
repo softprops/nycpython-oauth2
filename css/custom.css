@@ -1,0 +1,5 @@
+/* custom styles */
+
+h1 em, h2 em { color:#FF30A5; font-style:normal; }
+
+pre strong { color: #FF30A5; }
