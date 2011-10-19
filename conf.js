@@ -1,5 +1,5 @@
 {
-  "title": "nycpython oauth2",
+  "title": "consuming oauth for two",
   "sections": [
     "hello"
   ]

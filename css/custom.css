@@ -6,6 +6,8 @@ body {
 
 h1 em, h2 em { color:#FF30A5; font-style:normal; }
 
+.light { color:#ccc; }
+
 pre strong, strong { color: #FF30A5; }
 
 pre .un { color:#ccc; }

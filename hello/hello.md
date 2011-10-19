@@ -1,7 +1,7 @@
 !SLIDE
 <span class="v pad">
 
-# Consuming<br/> <em>Oauth</em> for <em>II</em>
+# Consuming<br/> <em>Oauth</em> for <em>two</em>
 
 <p>A healthy serving of<br/> open authentication with oauth2</p>
 
@@ -9,14 +9,22 @@
 
 
 !SLIDE
+<span class="v pad">
+
+# Let's talk about<br/> <em>me</em>.
+
+!SLIDE
 ![](/hello/a.png)![](/hello/b.png)![](/hello/c.png)![](/hello/d.png)![](/hello/e.png)
 
 !SLIDE
 <span class="v pad">
 
-# Oauth2
+# Oauth <em>2</em>
 
-For the uninitiated
+<span class="light">for the uninitiated</span>
+
+!SLIDE
+<span class="v pad">
 
 - a <strong>simple</strong>, 302-based <strong>authorization</strong> protocol
 - stop asking for passwords
@@ -25,29 +33,32 @@ For the uninitiated
 !SLIDE
 <span class="v pad">
 
-# change log
+# Change log
 
-## rfc-5849...now
+## rfc-5849<span class="light">...</span>today
 
-- trade signing for an https requirement
-- scopes exactly what do you think <strong>you're</strong> doing?
+!SLIDE
+<span class="v pad">
+
+- trade signing for TLS
+- scopes <span class="light">exactly what do you think you're doing?</span>
 - profilin' 
-auth code, implicit, user/client crendentials
+<span class="light"><strong>auth code</strong>, implicit, user/client credentials</span>
 
 
 !SLIDE
 <span class="v pad">
 
-# current status:
+# Current status:
 
-- it's drafty (22 so far)
-- not official (yet)
-- plan for changes (but hopefully not many)
+- Drafty <span class="light">(22 so far)</span>
+- Not official <span class="light">(yet)</span>
+- Plan for change <span class="light">(but hopefully not many)</span>
 
 !SLIDE
 <span class="v pad">
 
-# the gist
+# The __gist__
 
 1) authorization server *
 
@@ -55,13 +66,16 @@ auth code, implicit, user/client crendentials
 
 3) choose your profile
 
-\* these can be the same
+\* <span class="light">these can be the same</span>
 
 !SLIDE
-<span class="v pad" />
+<span class="v pad">
 
-# pregame
-## register a client w/
+# Pregame
+## register a client w/ ...
+
+!SLIDE
+<span class="v pad">
 
  * client_id
  * client_secret
@@ -153,7 +167,7 @@ http://your.com/post-oauth
 
 <div class="full">
   <h1>act: II</h1>
-  <h2>obtaining a token of power and trust</h2>
+  <h2>obtaining a token of power<br/>and trust</h2>
 </div>
 
 !SLIDE
@@ -243,14 +257,20 @@ curl https://api.meetup.com/2/member/self
 
 # Well, almost...
 
+!SLIDE
+<span class="v pad">
+
 - users can forsake (revoke) you
 - the clock could strike midnight (expires_in)
-- air ball (she's beyond you scope of access)
+- air ball! (she's beyond your scope of access)
+
+!SLIDE
+<span class="v pad">
+
+# Plan for a bumpy ride
 
 !SLIDE
 <span class="pad">
-
-# Plan for a bumpy ride
 
 <pre>
 from urllib2 import (Request, openurl, urlencode,
